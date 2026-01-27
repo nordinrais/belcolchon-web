@@ -1,6 +1,7 @@
 import Hero from '@/components/sections/Hero';
 import TrustBar from '@/components/sections/TrustBar';
 import ProductCard from '@/components/ui/ProductCard';
+import FeaturedProduct from '@/components/ui/FeaturedProduct';
 import StickyOffer from '@/components/ui/StickyOffer';
 
 export default function HomePage() {
@@ -8,117 +9,153 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <Hero
-        tag="🛏️ Colección Descanso Premium"
-        title="Descansa como mereces. Desde 1€ al día."
-        subtitle="Colchones de alta gama, sillones relax elevadores y bases articuladas con la mejor financiación. Envío y montaje gratis en toda la península."
-        ctaText="Ver Ofertas"
-        ctaHref="#productos"
+        tag="⭐ Calidad Premium desde 1€/día"
+        title="Vuelve a dormir como te mereces"
+        subtitle="Descubre la nueva Colección de Alta Tecnología del Descanso. Desde el indestructible Somier Titanium hasta el confort de nuestros Sillones Relax."
+        ctaText="Ver Catálogo"
+        ctaHref="#catalogo"
         secondaryCta={{
-          text: "Contactar",
-          href: "tel:961443681",
+          text: "Te Asesoramos",
+          href: "https://wa.me/34677481926?text=Hola,%20me%20interesa%20información%20sobre%20colchones",
         }}
       />
 
       {/* Trust Bar */}
       <TrustBar />
 
-      {/* Zona Relax */}
-      <section id="productos" className="py-16 bg-white">
+      {/* ==========================================
+          BLOQUE A: ZONA RELAX - Producto Destacado
+          ========================================== */}
+      <section id="catalogo" className="py-16 bg-[var(--color-surface)]">
         <div className="container">
           <div className="section-header">
             <h2>Zona Relax</h2>
-            <p>Sillones diseñados para tu bienestar y autonomía</p>
+            <p>Tu independencia no tiene precio. Tu comodidad, sí.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <ProductCard
-              title="Sillón Relax Elevador"
-              image="/images/sillon-relax-preview.jpg"
-              price="Desde 599€"
-              badge="⭐ Más vendido"
-              features={[
-                "Motor Power-Lift elevador",
-                "2 posiciones eléctricas",
-                "Tejido antimanchas",
-              ]}
-              ctaText="Ver Detalles"
-              ctaHref="/zona-relax/"
-            />
-            <ProductCard
-              title="Sillón Relax Premium"
-              image="/images/sillon-premium-preview.jpg"
-              price="Desde 899€"
-              features={[
-                "4 motores independientes",
-                "Calor lumbar integrado",
-                "Piel genuina chocolate",
-              ]}
-              ctaText="Ver Detalles"
-              ctaHref="/zona-relax/"
-            />
-            <ProductCard
-              title="Sofá Relax 2 Plazas"
-              image="/images/sofa-relax-preview.jpg"
-              price="Desde 1.299€"
-              features={[
-                "2 asientos reclinables",
-                "Motor eléctrico silencioso",
-                "Diferentes acabados",
-              ]}
-              ctaText="Ver Detalles"
-              ctaHref="/zona-relax/"
-            />
-          </div>
+          <FeaturedProduct
+            title="Sillón Relax Elevador"
+            subtitle="El más vendido"
+            description="Levántate sin esfuerzo gracias a su motor Power-Lift. Masaje por vibración y calor lumbar incluidos. Ideal para personas mayores o con movilidad reducida."
+            badge="⭐ Más Vendido"
+            image="/images/sillon-relax-preview.jpg"
+            features={[
+              "Motor Power-Lift elevador",
+              "Masaje por vibración integrado",
+              "Calor lumbar terapéutico",
+              "Tejido antimanchas de fácil limpieza",
+            ]}
+            price="Desde 1€/día"
+            priceNote="Financiación sin intereses"
+            ctaText="Lo Quiero Probar"
+            ctaHref="https://wa.me/34677481926?text=Hola,%20me%20interesa%20el%20Sillón%20Relax%20Elevador"
+          />
         </div>
       </section>
 
-      {/* Bases Tecnológicas */}
-      <section className="py-16 bg-[var(--color-surface)]">
+      {/* ==========================================
+          BLOQUE B: BASES TECNOLÓGICAS - Grid 3 cols
+          ========================================== */}
+      <section className="py-16 bg-white">
         <div className="container">
           <div className="section-header">
             <h2>Bases Tecnológicas</h2>
-            <p>Innovación alemana para un descanso superior</p>
+            <p>La base perfecta: Resistencia y Almacenaje.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ProductCard
-              title="Base Articulada Titanium"
-              image="/images/cama-articulada-elevada.jpg"
+              title="Somier Articulado TITANIUM"
+              image="/images/cama-articulada-plana.jpg"
               price="Desde 799€"
               badge="NUEVO"
               features={[
-                "Láminas de titanio",
-                "Motor ultrasilencioso",
-                "Mando inalámbrico",
+                "Ultra-resistente",
+                "Silencioso",
+                "Láminas Inteligentes",
               ]}
-              ctaText="Ver Detalles"
-              ctaHref="/bases-tecnologicas/"
+              ctaText="Más Información"
+              ctaHref="https://wa.me/34677481926?text=Hola,%20me%20interesa%20el%20Somier%20Titanium"
             />
             <ProductCard
-              title="Cama Articulada + Colchón"
+              title="Cama Articulada"
               image="/images/cama-articulada-colchon.jpg"
               price="Desde 1.199€"
               originalPrice="1.499€"
               badge="-20% PACK"
               features={[
-                "Base eléctrica completa",
-                "Colchón viscoelástico",
-                "Montaje incluido",
+                "Motores Silenciosos",
+                "Posición Zero-G",
+                "Mando Inalámbrico",
               ]}
-              ctaText="Ver Pack"
-              ctaHref="/bases-tecnologicas/"
+              ctaText="Más Información"
+              ctaHref="https://wa.me/34677481926?text=Hola,%20me%20interesa%20la%20Cama%20Articulada"
             />
             <ProductCard
-              title="Somier Fijo Premium"
-              image="/images/somier-fijo-preview.jpg"
-              price="Desde 299€"
+              title="Canapé Abatible"
+              image="/images/canape-abatible.jpg"
+              price="Desde 399€"
+              badge="Popular"
               features={[
-                "Estructura reforzada",
-                "Láminas flexibles",
-                "Compatible cualquier colchón",
+                "Gran Capacidad",
+                "Apertura Hidráulica",
+                "Madera Reforzada",
               ]}
-              ctaText="Ver Detalles"
-              ctaHref="/bases-tecnologicas/"
+              ctaText="Más Información"
+              ctaHref="https://wa.me/34677481926?text=Hola,%20me%20interesa%20el%20Canapé%20Abatible"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ==========================================
+          BLOQUE C: COLCHONES PREMIUM - Grid 3 cols
+          ========================================== */}
+      <section className="py-16 bg-[var(--color-surface)]">
+        <div className="container">
+          <div className="section-header">
+            <h2>Colchones Premium</h2>
+            <p>Dime cómo duermes y te diré qué colchón necesitas.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <ProductCard
+              title="Colchón Solid Firm"
+              image="/images/colchon-solid-firm.jpg"
+              price="Consultar precio"
+              features={[
+                "Firmeza Alta",
+                "Ortopédico",
+                "Alta Densidad",
+              ]}
+              ctaText="Consultar Precio"
+              ctaHref="https://wa.me/34677481926?text=Hola,%20me%20interesa%20el%20Colchón%20Solid%20Firm"
+            />
+            <ProductCard
+              title="Colchón Látex Natural"
+              image="/images/colchon-latex.jpg"
+              price="Consultar precio"
+              badge="Ecológico"
+              features={[
+                "100% Natural",
+                "Hipoalergénico",
+                "Antibacteriano",
+              ]}
+              ctaText="Consultar Precio"
+              ctaHref="https://wa.me/34677481926?text=Hola,%20me%20interesa%20el%20Colchón%20Látex"
+            />
+            <ProductCard
+              title="Colchón Ergo Hibrid"
+              image="/images/colchon-ergo-hibrid.jpg"
+              price="Consultar precio"
+              badge="Premium"
+              features={[
+                "Tecnología Híbrida",
+                "Muelles Ensacados",
+                "Viscoelástica",
+              ]}
+              ctaText="Consultar Precio"
+              ctaHref="https://wa.me/34677481926?text=Hola,%20me%20interesa%20el%20Colchón%20Ergo%20Hibrid"
             />
           </div>
         </div>
@@ -128,10 +165,10 @@ export default function HomePage() {
       <section className="py-16 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)] text-white">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Financia tu descanso <span className="text-[var(--color-cta)]">sin intereses</span>
+            El descanso de tus sueños, desde solo <span className="text-[var(--color-cta)]">1€ al día</span>
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Llévate lo que necesites hoy y paga cómodamente cada mes
+            Llevamos más de 20 años ayudando a miles de familias a dormir mejor. ¡Descúbrelo!
           </p>
           <div className="flex flex-wrap justify-center gap-8 mb-8">
             <div className="text-center">
@@ -143,13 +180,23 @@ export default function HomePage() {
               <p className="text-sm opacity-80">Entrada</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl font-bold">12</p>
-              <p className="text-sm opacity-80">Meses</p>
+              <p className="text-4xl font-bold">Gratis</p>
+              <p className="text-sm opacity-80">Retiramos tu viejo</p>
             </div>
           </div>
-          <a href="tel:961443681" className="btn btn-cta text-lg px-8">
-            Consultar Financiación
-          </a>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="tel:961443681" className="btn bg-white text-[var(--color-primary)] hover:bg-gray-100 text-lg px-8">
+              📞 Llama Ahora: 961 44 36 81
+            </a>
+            <a
+              href="https://wa.me/34677481926?text=Hola,%20me%20interesa%20información%20sobre%20financiación"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-cta text-lg px-8"
+            >
+              💬 Escríbenos por WhatsApp
+            </a>
+          </div>
         </div>
       </section>
 
