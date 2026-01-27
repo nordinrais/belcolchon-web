@@ -89,7 +89,7 @@ export default function HomePage() {
                 "Mando Inalámbrico",
               ]}
               ctaText="Más Información"
-              ctaHref="https://wa.me/34677481926?text=Hola,%20me%20interesa%20la%20Cama%20Articulada"
+              ctaHref="/cama-articulada"
             />
             <ProductCard
               title="Canapé Abatible"
