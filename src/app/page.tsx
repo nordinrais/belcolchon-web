@@ -48,7 +48,7 @@ export default function HomePage() {
             price="Desde 1€/día"
             priceNote="Financiación sin intereses"
             ctaText="Lo Quiero Probar"
-            ctaHref="/sillon-relax-tous"
+            ctaHref="/sillon-tous"
           />
         </div>
       </section>
