@@ -36,10 +36,10 @@ export default function LatexNaturalPage() {
     return (
         <>
             {/* 1. SECCIÓN HERO (Cabecera) */}
-            <section className="relative min-h-[80vh] flex items-center pt-20 overflow-hidden">
+            <section className="relative min-h-[50vh] md:min-h-[60vh] flex items-center pt-20 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/colchon  latex natural/Cama articulada eléctrica de diseño con colchón de látex 100% natural en dormitorio estilo biofílico de lujo - Belcolchon.png"
+                        src="/images/colchon-latex-natural/Cama articulada eléctrica de diseño con colchón de látex 100% natural en dormitorio estilo biofílico de lujo - Belcolchon.png"
                         alt="Colchón de Látex 100% Natural en entorno biofílico"
                         fill
                         className="object-cover"
@@ -98,7 +98,7 @@ export default function LatexNaturalPage() {
                         <div className="relative">
                             <div className="rounded-3xl overflow-hidden shadow-2xl skew-x-1 lg:skew-x-2 transition-transform hover:skew-x-0 duration-700">
                                 <Image
-                                    src="/images/colchon  latex natural/Colchón de látex 100% natural certificado.jpg"
+                                    src="/images/colchon-latex-natural/Colchón de látex 100% natural certificado.jpg"
                                     alt="Núcleo de Látex 100% Natural Certificado"
                                     width={700}
                                     height={500}
@@ -173,7 +173,7 @@ export default function LatexNaturalPage() {
                         <div className="bg-[var(--color-primary)] p-1 rounded-2xl overflow-hidden shadow-lg group lg:col-span-2">
                             <div className="relative h-full min-h-[300px] rounded-xl overflow-hidden">
                                 <Image
-                                    src="/images/colchon  latex natural/Pack cama articulada eléctrica con colchón de látex.png"
+                                    src="/images/colchon-latex-natural/Pack cama articulada eléctrica con colchón de látex.png"
                                     alt="Pack Cama Articulada Eléctrica con Colchón de Látex"
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -189,7 +189,7 @@ export default function LatexNaturalPage() {
                         <div className="bg-white p-1 rounded-2xl overflow-hidden shadow-lg group">
                             <div className="relative h-full min-h-[300px] rounded-xl overflow-hidden">
                                 <Image
-                                    src="/images/colchon  latex natural/Sistema de descanso ergonómico y sostenible.png"
+                                    src="/images/colchon-latex-natural/Sistema de descanso ergonómico y sostenible.png"
                                     alt="Sistema de descanso ergonómico"
                                     fill
                                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -202,7 +202,7 @@ export default function LatexNaturalPage() {
                     {/* Additional supporting banner */}
                     <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl mt-12">
                         <Image
-                            src="/images/colchon  latex natural/Cama motorizada premium para dolor de espalda.png"
+                            src="/images/colchon-latex-natural/Cama motorizada premium para dolor de espalda.png"
                             alt="Cama motorizada premium para alivio de espalda"
                             fill
                             className="object-cover"
