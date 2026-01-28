@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import TrustBar from '@/components/sections/TrustBar';
 import FAQSection from '@/components/sections/FAQSection';
+import PVPSection from '@/components/sections/PVPSection';
 
 export const metadata: Metadata = {
     title: 'Colchón Látex 100% Natural | Pack Cama Articulada - Belcolchon',
@@ -95,14 +96,14 @@ export default function LatexNaturalPage() {
                                 </p>
                             </div>
                         </div>
-                        <div className="relative">
+                        <div className="relative group">
                             <div className="rounded-3xl overflow-hidden shadow-2xl skew-x-1 lg:skew-x-2 transition-transform hover:skew-x-0 duration-700">
                                 <Image
                                     src="/images/colchon-latex-natural/nucleo-latex-natural.jpg"
                                     alt="Núcleo de Látex 100% Natural Certificado"
                                     width={700}
                                     height={500}
-                                    className="w-full h-auto"
+                                    className="w-full h-auto transition-transform duration-700 group-hover:scale-110"
                                 />
                             </div>
                             <div className="absolute -bottom-6 -left-6 bg-[var(--color-surface)] p-6 rounded-2xl shadow-lg border border-[var(--color-primary-light)] hidden md:block">
@@ -176,7 +177,7 @@ export default function LatexNaturalPage() {
                                     src="/images/colchon-latex-natural/pack-latex-articulada.png"
                                     alt="Pack Cama Articulada Eléctrica con Colchón de Látex"
                                     fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 text-white">
                                     <p className="font-bold text-2xl mb-2">El Pack del Descanso Total</p>
@@ -200,12 +201,12 @@ export default function LatexNaturalPage() {
                     </div>
 
                     {/* Additional supporting banner */}
-                    <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl mt-12">
+                    <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl mt-12 group">
                         <Image
                             src="/images/colchon-latex-natural/banner-espalda-latex.png"
                             alt="Cama motorizada premium para alivio de espalda"
                             fill
-                            className="object-cover"
+                            className="object-cover transition-transform duration-700 group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center p-12">
                             <div className="max-w-md text-white">
@@ -253,6 +254,9 @@ export default function LatexNaturalPage() {
                 subtitle="Sobre el Colchón Látex 100% Natural"
                 items={faqItems}
             />
+
+            {/* 5. PVP Y CUOTAS (Desplegable) */}
+            <PVPSection />
 
             {/* Final CTA */}
             <section id="configurar" className="py-20 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)] text-white overflow-hidden relative">
