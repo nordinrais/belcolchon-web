@@ -23,12 +23,12 @@ const products = [
     {
         id: 'latex-natural',
         name: 'Colchón Látex Natural',
-        tagline: 'Elasticidad y Frescura 100% Ecológica',
-        description: 'La máxima expresión de higiene y adaptabilidad. El látex natural ofrece una acogida suave y una transpirabilidad inigualable.',
-        image: '/images/colchon-latex.jpg',
-        features: ['100% Látex Natural', 'Hipoalergénico', 'Termorregulador'],
-        benefits: 'Perfecto para alérgicos y personas que buscan un descanso natural y muy flexible.',
-        cta: 'Consultar Precio',
+        tagline: 'Pureza y Ergonomía del Bosque',
+        description: 'Descanso 100% orgánico sin sintéticos ni aditivos. Savia natural de Hevea para una elasticidad y transpirabilidad inigualables.',
+        image: '/images/colchon  latex natural/Colchón de látex 100% natural certificado.jpg',
+        features: ['Certificado ECO Institut', 'Hipoalergénico Natural', '9 Zonas de Confort'],
+        benefits: 'Santuario de recuperación extraído directamente de la naturaleza para un despertar renovado.',
+        cta: 'Ver Ficha Técnica',
         waMessage: 'Hola, me interesa el Colchón Látex Natural'
     },
     {
@@ -108,9 +108,9 @@ export default function ColchonesPremiumPage() {
                                         ))}
                                     </ul>
                                     <Link
-                                        href={`https://wa.me/34677481926?text=${encodeURIComponent(product.waMessage)}`}
+                                        href={product.id === 'latex-natural' ? '/colchon-latex-natural' : `https://wa.me/34677481926?text=${encodeURIComponent(product.waMessage)}`}
                                         className="btn btn-cta w-full justify-center"
-                                        target="_blank"
+                                        target={product.id === 'latex-natural' ? '_self' : '_blank'}
                                     >
                                         {product.cta}
                                     </Link>
@@ -151,28 +151,31 @@ export default function ColchonesPremiumPage() {
                             </div>
                         </div>
 
-                        <div className="grid lg:grid-cols-2 gap-16 items-center">
+                        <div id="latex-natural" className="grid lg:grid-cols-2 gap-16 items-center">
                             <div className="relative">
                                 <div className="rounded-3xl overflow-hidden shadow-2xl -skew-y-1">
-                                    <Image src="/images/colchon-latex.jpg" alt="Detalle Látex Natural" width={600} height={400} className="w-full" />
+                                    <Image src="/images/colchon  latex natural/Colchón de látex 100% natural certificado.jpg" alt="Detalle Látex Natural" width={600} height={400} className="w-full" />
                                 </div>
                             </div>
                             <div>
                                 <span className="text-[var(--color-primary)] font-bold text-sm tracking-[0.2em] mb-4 block">NATURALEZA & HIGIENE</span>
-                                <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-6">Látex Natural: Respira cada noche</h2>
+                                <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-6">Látex Natural: Pureza y Ergonomía del Bosque</h2>
                                 <p className="text-lg text-[var(--color-text-secondary)] mb-6 leading-relaxed">
-                                    El látex es un material vivo que ofrece la mejor ventilación posible. Su estructura celular abierta permite que el aire circule, manteniendo una temperatura ideal y evitando la acumulación de ácaros y humedad.
+                                    Nuestro colchón de látex 100% natural certificado es un santuario de recuperación extraído directamente de la naturaleza. Elaborado exclusivamente con la savia del árbol Hevea brasiliensis, garantiza un entorno de sueño libre de sintéticos y aditivos.
                                 </p>
                                 <ul className="space-y-4 mb-8">
                                     <li className="flex gap-3">
                                         <span className="w-6 h-6 bg-[var(--color-cta)] rounded-full flex items-center justify-center text-xs flex-shrink-0">✓</span>
-                                        <p><strong>Antialérgico:</strong> Naturalmente resistente a bacterias y hongos.</p>
+                                        <p><strong>Salud Natural:</strong> Hipoalergénico por naturaleza y resistente a los ácaros.</p>
                                     </li>
                                     <li className="flex gap-3">
                                         <span className="w-6 h-6 bg-[var(--color-cta)] rounded-full flex items-center justify-center text-xs flex-shrink-0">✓</span>
-                                        <p><strong>Adaptabilidad:</strong> Se amolda al milímetro sin atrapar el calor.</p>
+                                        <p><strong>Ergonomía Pura:</strong> Sistema de descanso que se adapta punto por punto a tu silueta.</p>
                                     </li>
                                 </ul>
+                                <Link href="/colchon-latex-natural" className="btn btn-primary">
+                                    Ver Ficha del Producto
+                                </Link>
                             </div>
                         </div>
                     </div>

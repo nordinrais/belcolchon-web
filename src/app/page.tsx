@@ -48,16 +48,16 @@ export default function HomePage() {
             />
             <ProductCard
               title="Colchón Látex Natural"
-              image="/images/colchon-latex.jpg"
+              image="/images/colchon  latex natural/Colchón de látex 100% natural certificado.jpg"
               price="Consultar precio"
               badge="Ecológico"
               features={[
-                "100% Natural",
+                "Savia 100% Natural",
+                "Pureza del Bosque",
                 "Hipoalergénico",
-                "Antibacteriano",
               ]}
               ctaText="Ver Detalles"
-              ctaHref="/colchones-premium#latex-natural"
+              ctaHref="/colchon-latex-natural"
             />
             <ProductCard
               title="Colchón Ergo Hibrid"
