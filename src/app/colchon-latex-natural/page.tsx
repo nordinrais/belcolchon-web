@@ -169,19 +169,48 @@ export default function LatexNaturalPage() {
                             </p>
                         </div>
 
-                        {/* Supporting Image Card */}
-                        <div className="bg-[var(--color-primary)] p-1 rounded-2xl overflow-hidden shadow-lg group">
-                            <div className="relative h-full min-h-[250px] rounded-xl overflow-hidden">
+                        {/* Supporting Image Card 1: Pack Articulada */}
+                        <div className="bg-[var(--color-primary)] p-1 rounded-2xl overflow-hidden shadow-lg group lg:col-span-2">
+                            <div className="relative h-full min-h-[300px] rounded-xl overflow-hidden">
                                 <Image
-                                    src="/images/cama-articulada-plana.jpg"
-                                    alt="Somier Articulado Titanium - Pareja Perfecta"
+                                    src="/images/colchon  latex natural/Pack cama articulada eléctrica con colchón de látex.png"
+                                    alt="Pack Cama Articulada Eléctrica con Colchón de Látex"
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 text-white">
+                                    <p className="font-bold text-2xl mb-2">El Pack del Descanso Total</p>
+                                    <p className="text-lg opacity-90 max-w-lg">Combina el Látex 100% Natural con el soporte dinámico Titanium para una salud postural absoluta.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Supporting Image Card 2: Sistema Sostenible */}
+                        <div className="bg-white p-1 rounded-2xl overflow-hidden shadow-lg group">
+                            <div className="relative h-full min-h-[300px] rounded-xl overflow-hidden">
+                                <Image
+                                    src="/images/colchon  latex natural/Sistema de descanso ergonómico y sostenible.png"
+                                    alt="Sistema de descanso ergonómico"
                                     fill
                                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 text-white">
-                                    <p className="font-bold text-lg">La Pareja Perfecta</p>
-                                    <p className="text-sm opacity-80">Adaptabilidad total en camas articuladas.</p>
-                                </div>
+                                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Additional supporting banner */}
+                    <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl mt-12">
+                        <Image
+                            src="/images/colchon  latex natural/Cama motorizada premium para dolor de espalda.png"
+                            alt="Cama motorizada premium para alivio de espalda"
+                            fill
+                            className="object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center p-12">
+                            <div className="max-w-md text-white">
+                                <h3 className="text-3xl font-bold mb-4">Adiós al dolor de espalda</h3>
+                                <p className="text-lg opacity-90">9 de cada 10 usuarios reportan una mejora inmediata en su salud lumbar tras la primera semana.</p>
                             </div>
                         </div>
                     </div>
