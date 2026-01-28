@@ -1,40 +1,38 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 import { Metadata } from 'next';
 import TrustBar from '@/components/sections/TrustBar';
+import FAQSection from '@/components/sections/FAQSection';
 
 export const metadata: Metadata = {
     title: 'Colchón Látex 100% Natural | Pack Cama Articulada - Belcolchon',
     description: 'Compra el Colchón de Látex 100% Natural. Descanso ergonómico, sostenible y sin sintéticos. Núcleo de savia de Hevea para una adaptación perfecta y sueño saludable.',
 };
 
-// FAQ Component for clean code
-const FAQItem = ({ question, answer }: { question: string, answer: string }) => {
-    const [isOpen, setIsOpen] = useState(false);
-    return (
-        <div className="border-b border-gray-100 italic-none">
-            <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="w-full py-6 text-left flex justify-between items-center transition-colors hover:text-[var(--color-primary)]"
-            >
-                <span className="text-lg font-bold text-[var(--color-text)]">{question}</span>
-                <span className={`text-2xl transition-transform ${isOpen ? 'rotate-45' : ''}`}>+</span>
-            </button>
-            {isOpen && (
-                <div className="pb-6 animate-in fade-in slide-in-from-top-2 duration-300">
-                    <p className="text-[var(--color-text-secondary)] leading-relaxed">
-                        {answer}
-                    </p>
-                </div>
-            )}
-        </div>
-    );
-};
-
 export default function LatexNaturalPage() {
+    const faqItems = [
+        {
+            question: "¿Este colchón da calor?",
+            answer: "No. A diferencia de los sintéticos, nuestro látex tiene una estructura de célula abierta. Además, incorpora canales de aireación internos y una platabanda de tejido especial que aseguran que el aire circule continuamente. Esto regula la temperatura y evita la sudoración nocturna."
+        },
+        {
+            question: "¿Es adecuado si sufro de dolor de espalda?",
+            answer: "Absolutamente. Gracias a sus 9 zonas de descanso diferenciadas y a la función correctora del sueño, el colchón alinea tu columna vertebral en su posición natural. Las ventosas de micro-masaje alivian la presión en hombros y caderas, reduciendo la necesidad de cambiar de postura."
+        },
+        {
+            question: "¿Cómo se lava la funda?",
+            answer: "El mantenimiento es muy sencillo. La funda de algodón 100% orgánico es desenfundable gracias a su cremallera perimetral. Puedes lavarla cómodamente en casa a una temperatura máxima de 30°C para mantener la higiene perfecta."
+        },
+        {
+            question: "¿Es realmente 100% natural?",
+            answer: "Sí, y está certificado. El núcleo es de látex natural certificado por el ECO Institut (Alemania), lo que garantiza que no contiene cargas sintéticas ni sustancias nocivas. Es un producto ecológico y saludable, fabricado bajo el sello Nature de Craft by Hukla."
+        },
+        {
+            question: "¿Sirve para camas articuladas?",
+            answer: "Es la mejor opción para ello. Al ser un núcleo de látex 100% flexible y elástico, se adapta perfectamente a la curvatura de los somieres eléctricos (como nuestro modelo Titanium) sin deformarse ni perder propiedades con el tiempo."
+        }
+    ];
+
     return (
         <>
             {/* 1. SECCIÓN HERO (Cabecera) */}
@@ -221,37 +219,11 @@ export default function LatexNaturalPage() {
             </section>
 
             {/* 4. PREGUNTAS FRECUENTES (Acordeón) */}
-            <section className="py-20 bg-white">
-                <div className="container max-w-4xl mx-auto">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold">Preguntas Frecuentes</h2>
-                        <p className="text-[var(--color-text-secondary)] mt-2">Sobre el Colchón Látex 100% Natural</p>
-                    </div>
-
-                    <div className="space-y-2">
-                        <FAQItem
-                            question="¿Este colchón da calor?"
-                            answer="No. A diferencia de los sintéticos, nuestro látex tiene una estructura de célula abierta. Además, incorpora canales de aireación internos y una platabanda de tejido especial que aseguran que el aire circule continuamente. Esto regula la temperatura y evita la sudoración nocturna."
-                        />
-                        <FAQItem
-                            question="¿Es adecuado si sufro de dolor de espalda?"
-                            answer="Absolutamente. Gracias a sus 9 zonas de descanso diferenciadas y a la función correctora del sueño, el colchón alinea tu columna vertebral en su posición natural. Las ventosas de micro-masaje alivian la presión en hombros y caderas, reduciendo la necesidad de cambiar de postura."
-                        />
-                        <FAQItem
-                            question="¿Cómo se lava la funda?"
-                            answer="El mantenimiento es muy sencillo. La funda de algodón 100% orgánico es desenfundable gracias a su cremallera perimetral. Puedes lavarla cómodamente en casa a una temperatura máxima de 30°C para mantener la higiene perfecta."
-                        />
-                        <FAQItem
-                            question="¿Es realmente 100% natural?"
-                            answer="Sí, y está certificado. El núcleo es de látex natural certificado por el ECO Institut (Alemania), lo que garantiza que no contiene cargas sintéticas ni sustancias nocivas. Es un producto ecológico y saludable, fabricado bajo el sello Nature de Craft by Hukla."
-                        />
-                        <FAQItem
-                            question="¿Sirve para camas articuladas?"
-                            answer="Es la mejor opción para ello. Al ser un núcleo de látex 100% flexible y elástico, se adapta perfectamente a la curvatura de los somieres eléctricos (como nuestro modelo Titanium) sin deformarse ni perder propiedades con el tiempo."
-                        />
-                    </div>
-                </div>
-            </section>
+            <FAQSection
+                title="Preguntas Frecuentes"
+                subtitle="Sobre el Colchón Látex 100% Natural"
+                items={faqItems}
+            />
 
             {/* Final CTA */}
             <section id="configurar" className="py-20 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)] text-white overflow-hidden relative">

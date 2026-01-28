@@ -24,6 +24,16 @@
 - **Build**: Comprobación de compilación exitosa con Next.js.
 - **Tokens**: Aplicación estricta de la paleta Belcolchon (Azul #006494, Gris #2D3436, Amarillo CTA #FFD700).
 
+### 3. Nueva Landing Colchón Látex Natural
+- **Ruta**: `/colchon-latex-natural`
+- **Contenido**: Maquetación íntegra de la ficha técnica basada en el PDF de descripción.
+- **Secciones**:
+    - Hero biofílico con título SEO optimizado.
+    - Bloque narrativo con foco en la savia de Hevea y sostenibilidad.
+    - Grid de 5 características premium con soporte visual.
+    - Acordeón de FAQs resolviendo dudas sobre calor, higiene y articulación.
+- **SEO**: Meta-title y Meta-description configurados según requerimientos.
+
 ## 📁 Estado del Repositorio
 - **Estado**: Listo para despliegue en Dokploy. Las rutas están optimizadas como páginas estáticas (SSG).
 
