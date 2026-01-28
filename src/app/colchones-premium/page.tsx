@@ -25,7 +25,7 @@ const products = [
         name: 'Colchón Látex Natural',
         tagline: 'Pureza y Ergonomía del Bosque',
         description: 'Descanso 100% orgánico sin sintéticos ni aditivos. Savia natural de Hevea para una elasticidad y transpirabilidad inigualables.',
-        image: '/images/colchon-latex-natural/Colchón de látex 100% natural certificado.jpg',
+        image: '/images/colchon-latex-natural/nucleo-latex-natural.jpg',
         features: ['Certificado ECO Institut', 'Hipoalergénico Natural', '9 Zonas de Confort'],
         benefits: 'Santuario de recuperación extraído directamente de la naturaleza para un despertar renovado.',
         cta: 'Ver Ficha Técnica',
@@ -154,7 +154,7 @@ export default function ColchonesPremiumPage() {
                         <div id="latex-natural" className="grid lg:grid-cols-2 gap-16 items-center">
                             <div className="relative">
                                 <div className="rounded-3xl overflow-hidden shadow-2xl -skew-y-1">
-                                    <Image src="/images/colchon-latex-natural/Colchón de látex 100% natural certificado.jpg" alt="Detalle Látex Natural" width={600} height={400} className="w-full" />
+                                    <Image src="/images/colchon-latex-natural/nucleo-latex-natural.jpg" alt="Detalle Látex Natural" width={600} height={400} className="w-full" />
                                 </div>
                             </div>
                             <div>

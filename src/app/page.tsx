@@ -48,7 +48,7 @@ export default function HomePage() {
             />
             <ProductCard
               title="Colchón Látex Natural"
-              image="/images/colchon-latex-natural/Colchón de látex 100% natural certificado.jpg"
+              image="/images/colchon-latex-natural/nucleo-latex-natural.jpg"
               price="Consultar precio"
               badge="Ecológico"
               features={[
