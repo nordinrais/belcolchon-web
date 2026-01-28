@@ -24,32 +24,55 @@ export default function HomePage() {
       <TrustBar />
 
       {/* ==========================================
-          BLOQUE A: ZONA RELAX - Producto Destacado
+          BLOQUE A: COLCHONES PREMIUM - Grid 3 cols
           ========================================== */}
-      <section id="catalogo" className="py-16 bg-[var(--color-surface)]">
+      <section className="py-16 bg-[var(--color-surface)]">
         <div className="container">
           <div className="section-header">
-            <h2>Zona Relax</h2>
-            <p>Tu independencia no tiene precio. Tu comodidad, sí.</p>
+            <h2>Colchones Premium</h2>
+            <p>Dime cómo duermes y te diré qué colchón necesitas.</p>
           </div>
 
-          <FeaturedProduct
-            title="Sillón Relax Elevador"
-            subtitle="El más vendido"
-            description="Levántate sin esfuerzo gracias a su motor Power-Lift. Masaje por vibración y calor lumbar incluidos. Ideal para personas mayores o con movilidad reducida."
-            badge="⭐ Más Vendido"
-            image="/images/sillon-relax-preview.jpg"
-            features={[
-              "Motor Power-Lift elevador",
-              "Masaje por vibración integrado",
-              "Calor lumbar terapéutico",
-              "Tejido antimanchas de fácil limpieza",
-            ]}
-            price="Desde 1€/día"
-            priceNote="Financiación sin intereses"
-            ctaText="Lo Quiero Probar"
-            ctaHref="/sillon-tous"
-          />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <ProductCard
+              title="Colchón Solid Firm"
+              image="/images/colchon-solid-firm.jpg"
+              price="Consultar precio"
+              features={[
+                "Firmeza Alta",
+                "Ortopédico",
+                "Alta Densidad",
+              ]}
+              ctaText="Ver Detalles"
+              ctaHref="/colchones-premium#solid-firm"
+            />
+            <ProductCard
+              title="Colchón Látex Natural"
+              image="/images/colchon-latex.jpg"
+              price="Consultar precio"
+              badge="Ecológico"
+              features={[
+                "100% Natural",
+                "Hipoalergénico",
+                "Antibacteriano",
+              ]}
+              ctaText="Ver Detalles"
+              ctaHref="/colchones-premium#latex-natural"
+            />
+            <ProductCard
+              title="Colchón Ergo Hibrid"
+              image="/images/colchon-ergo-hibrid.jpg"
+              price="Consultar precio"
+              badge="Premium"
+              features={[
+                "Tecnología Híbrida",
+                "Muelles Ensacados",
+                "Viscoelástica",
+              ]}
+              ctaText="Ver Detalles"
+              ctaHref="/colchones-premium#ergo-hibrid"
+            />
+          </div>
         </div>
       </section>
 
@@ -109,55 +132,32 @@ export default function HomePage() {
       </section>
 
       {/* ==========================================
-          BLOQUE C: COLCHONES PREMIUM - Grid 3 cols
+          BLOQUE C: ZONA RELAX - Producto Destacado
           ========================================== */}
-      <section className="py-16 bg-[var(--color-surface)]">
+      <section id="catalogo" className="py-16 bg-[var(--color-surface)]">
         <div className="container">
           <div className="section-header">
-            <h2>Colchones Premium</h2>
-            <p>Dime cómo duermes y te diré qué colchón necesitas.</p>
+            <h2>Zona Relax</h2>
+            <p>Tu independencia no tiene precio. Tu comodidad, sí.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <ProductCard
-              title="Colchón Solid Firm"
-              image="/images/colchon-solid-firm.jpg"
-              price="Consultar precio"
-              features={[
-                "Firmeza Alta",
-                "Ortopédico",
-                "Alta Densidad",
-              ]}
-              ctaText="Consultar Precio"
-              ctaHref="https://wa.me/34677481926?text=Hola,%20me%20interesa%20el%20Colchón%20Solid%20Firm"
-            />
-            <ProductCard
-              title="Colchón Látex Natural"
-              image="/images/colchon-latex.jpg"
-              price="Consultar precio"
-              badge="Ecológico"
-              features={[
-                "100% Natural",
-                "Hipoalergénico",
-                "Antibacteriano",
-              ]}
-              ctaText="Consultar Precio"
-              ctaHref="https://wa.me/34677481926?text=Hola,%20me%20interesa%20el%20Colchón%20Látex"
-            />
-            <ProductCard
-              title="Colchón Ergo Hibrid"
-              image="/images/colchon-ergo-hibrid.jpg"
-              price="Consultar precio"
-              badge="Premium"
-              features={[
-                "Tecnología Híbrida",
-                "Muelles Ensacados",
-                "Viscoelástica",
-              ]}
-              ctaText="Consultar Precio"
-              ctaHref="https://wa.me/34677481926?text=Hola,%20me%20interesa%20el%20Colchón%20Ergo%20Hibrid"
-            />
-          </div>
+          <FeaturedProduct
+            title="Sillón Relax Elevador"
+            subtitle="El más vendido"
+            description="Levántate sin esfuerzo gracias a su motor Power-Lift. Masaje por vibración y calor lumbar incluidos. Ideal para personas mayores o con movilidad reducida."
+            badge="⭐ Más Vendido"
+            image="/images/sillon-relax-preview.jpg"
+            features={[
+              "Motor Power-Lift elevador",
+              "Masaje por vibración integrado",
+              "Calor lumbar terapéutico",
+              "Tejido antimanchas de fácil limpieza",
+            ]}
+            price="Desde 1€/día"
+            priceNote="Financiación sin intereses"
+            ctaText="Lo Quiero Probar"
+            ctaHref="/sillon-tous"
+          />
         </div>
       </section>
 
