@@ -2,7 +2,16 @@
 
 ## 🚀 Logros Principales
 
-### 1. Nueva Landing Colchones Premium
+### 1. Rediseño del Hero (Carrusel Dinámico)
+- **Estructura**: Cambio de layout estático a grid de 2 columnas (Texto a la izquierda, Carrusel a la derecha).
+- **Tecnología**: Implementación con `embla-carousel-react` para un rendimiento ligero.
+- **Contenido del Carrusel**:
+    - Slide 1: Imagen lifestyle de alta calidad.
+    - Slide 2: Imagen con mensaje de "Envío Gratis y Retirada" superpuesto.
+    - Slide 3: **Tarjeta de Oferta Flash** recreada íntegramente con HTML/Tailwind (50% Dto, 101 noches, regalos incluidos).
+- **Responsivo**: En móviles, el contenido pasa a una sola columna (Texto arriba, Carrusel abajo).
+
+### 2. Nueva Landing Colchones Premium
 - **Ruta**: `/colchones-premium`
 - **Contenido**: Implementación completa de la sección de alta gama con foco en la "Ciencia del Descanso".
 - **Modelos**: Secciones detalladas para **Solid Firm** (firmeza), **Látex Natural** (ecología y transpirabilidad) y **Ergo Hibrid** (tecnología dual).
