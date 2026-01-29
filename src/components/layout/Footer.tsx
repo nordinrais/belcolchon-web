@@ -11,9 +11,9 @@ export default function Footer() {
                         <Image
                             src="/images/logo-belcolchon-final.png"
                             alt="Bel Colchón"
-                            width={200}
-                            height={80}
-                            className="h-12 md:h-16 w-auto brightness-0 invert"
+                            width={250}
+                            height={100}
+                            className="h-16 md:h-20 w-auto brightness-0 invert"
                         />
                     </Link>
 
