@@ -9,7 +9,7 @@ export default function Footer() {
                 <div className="flex flex-col items-center gap-6 text-center">
                     <Link href="/" className="block">
                         <Image
-                            src="/images/logo.png"
+                            src="/images/logo-belcolchon-nuevo.png"
                             alt="Bel Colchón"
                             width={120}
                             height={40}

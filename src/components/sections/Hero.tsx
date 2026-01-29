@@ -95,39 +95,39 @@ export default function Hero({
                                 </div>
 
                                 {/* Slide 3: TARJETA DE OFERTA FLASH */}
-                                <div className="embla__slide flex-[0_0_100%] min-w-0 relative aspect-[4/3] bg-[#f8fafc]">
-                                    <div className="h-full flex flex-col">
+                                <div className="embla__slide flex-[0_0_100%] min-w-0 relative aspect-auto min-h-[450px] md:min-h-[500px] bg-[#f8fafc] flex flex-col">
+                                    <div className="h-full flex flex-col w-full">
                                         {/* Cabecera */}
-                                        <div className="bg-[var(--color-primary)] p-6 text-center shadow-md">
-                                            <span className="text-white font-black text-2xl md:text-3xl tracking-tighter italic">OFERTA FLASH</span>
+                                        <div className="bg-[var(--color-primary)] p-4 md:p-6 text-center shadow-md">
+                                            <span className="text-white font-black text-xl md:text-2xl lg:text-3xl tracking-tighter italic block truncate">OFERTA FLASH</span>
                                         </div>
 
                                         {/* Cuerpo */}
-                                        <div className="flex-1 p-8 md:p-10 flex flex-col justify-center bg-white border-x-8 border-b-8 border-[var(--color-primary)]">
-                                            <div className="space-y-4">
-                                                <div className="flex items-center gap-4 text-xl font-bold text-red-600">
-                                                    <span className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center">✓</span>
+                                        <div className="flex-grow p-4 md:p-8 flex flex-col justify-center bg-white border-x-4 md:border-x-8 border-b-4 md:border-b-8 border-[var(--color-primary)]">
+                                            <div className="space-y-4 md:space-y-6">
+                                                <div className="flex items-center gap-3 md:gap-4 text-base md:text-xl font-bold text-red-600">
+                                                    <span className="shrink-0 w-6 h-6 md:w-8 md:h-8 rounded-full bg-red-100 flex items-center justify-center text-xs md:text-base">✓</span>
                                                     <span>50% de DESCUENTO</span>
                                                 </div>
-                                                <div className="flex items-center gap-4 text-xl font-bold text-gray-800">
-                                                    <span className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">✓</span>
+                                                <div className="flex items-center gap-3 md:gap-4 text-base md:text-xl font-bold text-gray-800">
+                                                    <span className="shrink-0 w-6 h-6 md:w-8 md:h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-xs md:text-base">✓</span>
                                                     <span>101 noches de prueba</span>
                                                 </div>
-                                                <div className="flex items-center gap-4 text-xl font-bold text-gray-800">
-                                                    <span className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">✓</span>
+                                                <div className="flex items-center gap-3 md:gap-4 text-base md:text-xl font-bold text-gray-800">
+                                                    <span className="shrink-0 w-6 h-6 md:w-8 md:h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xs md:text-base">✓</span>
                                                     <span>Unidades Limitadas</span>
                                                 </div>
 
-                                                <hr className="my-6 border-dashed border-gray-300" />
+                                                <hr className="my-2 md:my-4 border-dashed border-gray-300" />
 
-                                                <div className="space-y-3">
-                                                    <div className="flex items-center gap-3 text-lg font-semibold text-[var(--color-primary)]">
-                                                        <span className="text-2xl">🎁</span>
-                                                        <span>REGALO: 2 almohadas viscoelásticas</span>
+                                                <div className="space-y-2 md:space-y-3">
+                                                    <div className="flex items-center gap-2 md:gap-3 text-sm md:text-lg font-semibold text-[var(--color-primary)]">
+                                                        <span className="text-lg md:text-2xl">🎁</span>
+                                                        <span className="leading-tight">REGALO: 2 almohadas viscoelásticas</span>
                                                     </div>
-                                                    <div className="flex items-center gap-3 text-lg font-semibold text-[var(--color-primary)]">
-                                                        <span className="text-2xl">🎁</span>
-                                                        <span>REGALO: Pareja de albornoces</span>
+                                                    <div className="flex items-center gap-2 md:gap-3 text-sm md:text-lg font-semibold text-[var(--color-primary)]">
+                                                        <span className="text-lg md:text-2xl">🎁</span>
+                                                        <span className="leading-tight">REGALO: Pareja de albornoces</span>
                                                     </div>
                                                 </div>
                                             </div>
