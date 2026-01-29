@@ -31,13 +31,12 @@ export default function Navbar() {
                 <div className="container flex items-center justify-between">
                     <Link href="/" className="block">
                         <Image
-                            src="/images/logo-belcolchon-final.png"
+                            src="/images/logo-bel.png"
                             alt="Bel Colchón"
-                            width={1000}
-                            height={400}
-                            className="h-[180px] md:h-[250px] lg:h-[300px] w-auto object-contain flex-shrink-0"
+                            width={180}
+                            height={60}
+                            className="h-12 md:h-16 w-auto object-contain"
                             priority
-                            unoptimized
                         />
                     </Link>
 

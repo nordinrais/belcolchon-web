@@ -9,11 +9,11 @@ export default function Footer() {
                 <div className="flex flex-col items-center gap-6 text-center">
                     <Link href="/" className="block">
                         <Image
-                            src="/images/logo-belcolchon-final.png"
+                            src="/images/logo-bel.png"
                             alt="Bel Colchón"
-                            width={250}
-                            height={100}
-                            className="h-16 md:h-20 w-auto brightness-0 invert"
+                            width={150}
+                            height={50}
+                            className="h-12 w-auto brightness-0 invert"
                         />
                     </Link>
 
