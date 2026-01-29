@@ -27,15 +27,15 @@ export default function Navbar() {
             </div>
 
             {/* Main Header */}
-            <div className="py-0">
-                <div className="container flex items-center justify-between min-h-[80px] md:min-h-[100px]">
+            <div className="py-2 md:py-4">
+                <div className="container flex items-center justify-between">
                     <Link href="/" className="block">
                         <Image
                             src="/images/logo-belcolchon-final.png"
                             alt="Bel Colchón"
-                            width={400}
-                            height={150}
-                            className="h-24 md:h-32 lg:h-40 w-auto object-contain"
+                            width={600}
+                            height={250}
+                            className="h-28 md:h-40 lg:h-52 w-auto object-contain"
                             priority
                         />
                     </Link>
