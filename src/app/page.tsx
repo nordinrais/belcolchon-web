@@ -35,16 +35,17 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ProductCard
-              title="Colchón Solid Firm"
-              image="/images/colchon-solid-firm.jpg"
-              price="Consultar precio"
+              title="Colchón Aura Supreme"
+              image="/images/aura-supreme/colchon-aura-supreme-1.webp"
+              price="Desde 512,10 €"
+              badge="9/10 FIRMEZA"
               features={[
-                "Firmeza Alta",
-                "Ortopédico",
-                "Alta Densidad",
+                "Tecnología Cooler",
+                "Muelle Ensacado",
+                "Soporte Lumbar",
               ]}
               ctaText="Ver Detalles"
-              ctaHref="/colchones-premium#solid-firm"
+              ctaHref="/colchones/aura-supreme-firmeza-alta"
             />
             <ProductCard
               title="Colchón Látex Natural"

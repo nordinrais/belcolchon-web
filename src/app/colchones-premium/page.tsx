@@ -5,20 +5,20 @@ import TrustBar from '@/components/sections/TrustBar';
 
 export const metadata: Metadata = {
     title: 'Colchones Premium | Belcolchon - La Ciencia del Descanso',
-    description: 'Descubre nuestra gama de colchones de alta gama: Solid Firm, Látex Natural y Ergo Hibrid. Calidad superior para un descanso reparador.',
+    description: 'Descubre nuestra gama de colchones de alta gama: Aura Supreme, Látex Natural y Ergo Hibrid. Calidad superior para un descanso reparador.',
 };
 
 const products = [
     {
-        id: 'solid-firm',
-        name: 'Colchón Solid Firm',
-        tagline: 'Soporte Ortoperdico de Alta Densidad',
-        description: 'Diseñado para quienes buscan una firmeza superior sin renunciar al confort. Su núcleo de alta densidad asegura una alineación perfecta de la columna.',
-        image: '/images/colchon-solid-firm.jpg',
-        features: ['Firmeza Alta (8/10)', 'Núcleo Reforzado', 'Independencia de lechos'],
-        benefits: 'Ideal para personas con dolores de espalda o que prefieren dormir sobre una superficie firme.',
-        cta: 'Consultar Precio',
-        waMessage: 'Hola, me interesa el Colchón Solid Firm'
+        id: 'aura-supreme',
+        name: 'Colchón Aura Supreme',
+        tagline: 'Firmeza superior y termorregulación dual',
+        description: 'La cumbre de nuestra Serie Titanium. Un colchón híbrido diseñado para una firmeza ortopédica inigualable con tecnología de muelles ensacados reforzados.',
+        image: '/images/aura-supreme/colchon-aura-supreme-1.webp',
+        features: ['Firmeza Alta (9/10)', 'Tejido Cooler Efecto Frío', 'Independencia de lechos'],
+        benefits: 'Ideal para personas que buscan soporte máximo, pesan más de 90kg o sufren de calor nocturno.',
+        cta: 'Ver Ficha Técnica',
+        waMessage: 'Hola, me interesa el Colchón Aura Supreme'
     },
     {
         id: 'latex-natural',
@@ -108,9 +108,9 @@ export default function ColchonesPremiumPage() {
                                         ))}
                                     </ul>
                                     <Link
-                                        href={product.id === 'latex-natural' ? '/colchon-latex-natural' : `https://wa.me/34677481926?text=${encodeURIComponent(product.waMessage)}`}
+                                        href={product.id === 'latex-natural' ? '/colchon-latex-natural' : product.id === 'aura-supreme' ? '/colchones/aura-supreme-firmeza-alta' : `https://wa.me/34677481926?text=${encodeURIComponent(product.waMessage)}`}
                                         className="btn btn-cta w-full justify-center"
-                                        target={product.id === 'latex-natural' ? '_self' : '_blank'}
+                                        target={product.id === 'latex-natural' || product.id === 'aura-supreme' ? '_self' : '_blank'}
                                     >
                                         {product.cta}
                                     </Link>
@@ -126,27 +126,30 @@ export default function ColchonesPremiumPage() {
                 <div className="container">
                     <div className="space-y-24">
                         {/* Example of one detailed block */}
-                        <div className="grid lg:grid-cols-2 gap-16 items-center">
+                        <div id="aura-supreme" className="grid lg:grid-cols-2 gap-16 items-center">
                             <div className="order-2 lg:order-1">
-                                <span className="text-[var(--color-primary)] font-bold text-sm tracking-[0.2em] mb-4 block">INGENIERÍA SOLID</span>
-                                <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-6">Solid Firm: La firmeza que tu espalda necesita</h2>
+                                <span className="text-[var(--color-primary)] font-bold text-sm tracking-[0.2em] mb-4 block">SERIE TITANIUM</span>
+                                <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-6">Aura Supreme: La firmeza que tu espalda necesita</h2>
                                 <p className="text-lg text-[var(--color-text-secondary)] mb-6 leading-relaxed">
-                                    Muchos colchones pierden su forma con el tiempo, provocando dolores de espalda y malas posturas. El Solid Firm está construido con un alma de alta densidad que garantiza estabilidad absoluta durante años.
+                                    El Aura Supreme es la respuesta definitiva al dolor de espalda. Construido con un núcleo de muelles ensacados reforzados y soporte perimetral de HR 40kg, garantiza una alineación ortopédica perfecta.
                                 </p>
                                 <div className="grid sm:grid-cols-2 gap-4 mb-8">
                                     <div className="bg-white p-4 rounded-xl shadow-sm">
-                                        <p className="font-bold text-[var(--color-primary)] mb-1">Durabilidad Extrema</p>
-                                        <p className="text-sm text-[var(--color-text-secondary)]">Materiales que no ceden con el peso.</p>
+                                        <p className="font-bold text-[var(--color-primary)] mb-1">Tecnología Cooler</p>
+                                        <p className="text-sm text-[var(--color-text-secondary)]">Reducción térmica inmediata para un sueño fresco.</p>
                                     </div>
                                     <div className="bg-white p-4 rounded-xl shadow-sm">
-                                        <p className="font-bold text-[var(--color-primary)] mb-1">Cero Movimiento</p>
-                                        <p className="text-sm text-[var(--color-text-secondary)]">Si tu pareja se mueve, tú no lo sientes.</p>
+                                        <p className="font-bold text-[var(--color-primary)] mb-1">Firmeza 9/10</p>
+                                        <p className="text-sm text-[var(--color-text-secondary)]">Soporte superior para pesos elevados.</p>
                                     </div>
                                 </div>
+                                <Link href="/colchones/aura-supreme-firmeza-alta" className="btn btn-primary">
+                                    Ver Ficha del Producto
+                                </Link>
                             </div>
                             <div className="order-1 lg:order-2">
                                 <div className="rounded-3xl overflow-hidden shadow-2xl skew-y-1">
-                                    <Image src="/images/colchon-solid-firm.jpg" alt="Detalle Solid Firm" width={600} height={400} className="w-full" />
+                                    <Image src="/images/aura-supreme/colchon-aura-supreme-1.webp" alt="Detalle Aura Supreme" width={600} height={400} className="w-full" />
                                 </div>
                             </div>
                         </div>
