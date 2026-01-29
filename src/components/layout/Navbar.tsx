@@ -33,10 +33,11 @@ export default function Navbar() {
                         <Image
                             src="/images/logo-belcolchon-final.png"
                             alt="Bel Colchón"
-                            width={800}
-                            height={300}
-                            className="h-[150px] md:h-[200px] lg:h-[250px] w-auto object-contain"
+                            width={1000}
+                            height={400}
+                            className="h-[180px] md:h-[250px] lg:h-[300px] w-auto object-contain flex-shrink-0"
                             priority
+                            unoptimized
                         />
                     </Link>
 
